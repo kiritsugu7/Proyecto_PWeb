@@ -11,20 +11,21 @@
             <div align="right"><img src="UTN logo.jpg"></div>
             <form action="salvar.php" method="get" name="form_1">
             	<label for="userrole">Tipo de usuario</label>
-                <select id="userrole" name="userrole">
+                <select id="userrole" name="userrole" >
                     <option selected="true" value="_"></option>
                     <option value="dircarrera">Director de carrera</option>
                     <option value="student">Estudiante</option>
                 </select>
-                <br />
+                <br>
                 <label for="username">Identificaci&oacute;n</label>
-                <input type="text" size="12" maxlength="15" id="username" name="username"></input>
-                <br />
+                <input type="text" maxlength="10" id="username" name="username"></input>
+                <br>
                 <label for="password">Contrase&ntilde;a</label>
-                <input type="password" size="10" maxlength="4" id="password" name="password"></input>
-                <br />
-                <input type="submit" value="Salvar"></input>
-                <input type="reset" value="Limpiar"></input>
+                <input type="password" maxlength="10" id="password" name="password"></input>
+                <br>
+                <br>
+                <input type="submit" value="Entrar" id="save"></input>
+                <input type="submit" value="Olvid&oacute; su ID o contrase&ntilde;a?"></input>
             </form>
         </div>
     </div>
