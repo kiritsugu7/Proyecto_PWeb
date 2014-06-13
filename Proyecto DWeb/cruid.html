@@ -7,41 +7,69 @@
  
 <body>
  <!--Título-->
- <div id="image"><img src="UTN%20logo2.jpg" alt="Logo U"></div>
- <h1>Perfiles UTN</h1>
- <!--Contenedor-->
- <div id="container">
-  <!--Pestaña Dashboard activa por defecto-->
-  <input id="tab-1" type="radio" name="tab-group" checked="checked" />
-  <label for="tab-1">Dashboard</label>
-  <!--Pestaña Carreras inactiva por defecto-->
-  <input id="tab-2" type="radio" name="tab-group" />
-  <label for="tab-2">Carreras</label>
-  <!--Pestaña Estudiantes inactiva por defecto-->
-  <input id="tab-3" type="radio" name="tab-group" />
-  <label for="tab-3">Estudiantes</label>
-  <!--Pestaña Usuarios inactiva por defecto-->
-  <input id="tab-4" type="radio" name="tab-group" />
-  <label for="tab-4">Usuarios</label>
-  <!--Contenido a mostrar/ocultar-->
-  <div id="content">
-   <!--Contenido del dashboard-->
-   <div id="content-1">
+ <div id="opciones">
+  <label class="etiqueta" id="holaadmin">Hola Admin</label>
+  <a href="proyecto.html" target:"_blank" id="salir">Salir</a>
+</div>
+  <div id="image"><img src="UTN%20logo2.jpg" alt="Logo U"></div>
+  <h1>Perfiles UTN</h1>
+  <!--Contenedor-->
+    <div id="container">
+    <!--Pestaña Dashboard activa por defecto-->
+    <input id="tab-1" type="radio" name="tab-group" checked="checked" />
+    <label for="tab-1">Dashboard</label>
+    <!--Pestaña Carreras inactiva por defecto-->
+    <input id="tab-2" type="radio" name="tab-group" />
+    <label for="tab-2">Carreras</label>
+    <!--Pestaña Estudiantes inactiva por defecto-->
+    <input id="tab-3" type="radio" name="tab-group" />
+    <label for="tab-3">Estudiantes</label>
+    <!--Pestaña Usuarios inactiva por defecto-->
+    <input id="tab-4" type="radio" name="tab-group" />
+    <label for="tab-4">Usuarios</label>
+    <!--Contenido a mostrar/ocultar-->
+      <div id="content"><!--Contenido del dashboard-->
+      <div id="content-1">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-   </div>
-   <!--Contenido de Carreras-->
-   <div id="content-2">
+      </div> <!--Contenido de Carreras-->
+      <div id="content-2">
         <p>holamundo2</p>
-   </div>
-   <!--Contenido de Estudiantes-->
-   <div id="content-3">
-        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-   </div>
-   <!--Contenido de Usuarios-->
-   <div id="content-4">
-        <p>holamundo4</p>
-   </div>
-  </div>
- </div>
+      </div>
+      <!--Contenido de Estudiantes-->
+      <div id="content-3">
+          <form action="buscar.php" method="get" name="form_1">
+            <label for="username" class="etiqueta">Buscar estudiante por ID o Nombre</label> <!--Buscarlos por cédula o por nombre-->
+            <input class="datos" type="text" maxlength="10" id="username" name="username"/>
+            <br>
+            <label for="career" class="etiqueta">Buscar estudiante por Carrera</label>
+            <input class="datos" type="text" maxlength="10" id="career" name="career"/>
+            <br>
+            <label for="english" class="etiqueta">Buscar estudiante por Nivel de ingl&eacute;s</label>
+            <select id="english" name="english">
+              <option value="low">Bajo</option>
+              <option value="average" selected="false">Normal</option>
+              <option value="high">Alto</option>
+              <option value="nextlvl">Muy alto</option>
+            </select>
+            <br>
+            <label for="username" class="etiqueta">Buscar estudiante por Calidades o Skills</label>
+            <select id="skills" name="skills">
+              <option value="creative">Creativo</option>
+              <option value="smart">Inteligente</option>
+              <option value="athletic">Atl&eacute;tico</option>
+              <option value="leadership">Lider</option>
+              <option value="mentoring">Buen mentor</option>
+              <option value="tidy">Ordenado</option>
+            </select>
+            <br>
+        </form>
+          <input class="datos" type="submit" value="Buscar" id="buscar"/>
+      </div>
+      <!--Contenido de Usuarios-->
+      <div id="content-4">
+          <p>holamundo4</p>
+      </div>
+      </div>
+    </div>
 </body>
 </html>

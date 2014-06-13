@@ -1,3 +1,13 @@
+a:link {text-decoration:underline;color: blue;}
+
+
+a:visited {text-decoration:none;color: purple;}
+
+
+a:active {text-decoration:blink;color: green;}
+
+
+a:hover {text-decoration:underline;color: green;} 
 body { background-color: white; }
 h1 { font-size:40px; font-family:verdana; color:black }
 h2 { font-size: 27px; font-family: "verdana"; color: black }

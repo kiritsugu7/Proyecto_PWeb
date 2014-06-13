@@ -1,36 +1,62 @@
-body { background-color: white; }
+a:link {text-decoration:underline;color: blue;} /*Darle color al enlace*/
+
+
+a:visited {text-decoration:none;color: purple;} /*Darle color al enlace visitado*/
+
+
+a:active {text-decoration:blink;color: green;} /*Darle color y decoración al enlace activo*/
+
+
+a:hover {text-decoration:underline;color: green;} /*Darle color al enlace por el cual está pasando el puntero*/
+
+body { background-color: white; } /*Color de fondo de la página*/
 * {
 	font-family: Arial;
-	padding: 0px;
+	padding: 0px; /*Propiedades de toda la página, fuente y distancias de los bordes*/
 	margin: 0px;
+}
+#opciones /*Posición y borde de la tablilla de opciones "Hola admin" y "Salir" */
+{
+	margin-top: 10px;
+	border-radius: 20px;
+	border: 1px solid #A9F5F2;
+	float: right;
+	padding: 5px;
+	padding-left: 13px;
+	padding-right: 13px;
+	margin-right: 80px;
+}
+#salir 
+{
+	font-size: 12px;
 }
 h1 {
 	margin-left: 6% ;
 	text-align: left;
 	font-size:15px;
 }
-#image{
-	margin: 5px;
+#image{ 
+	margin: 5px; /*Aplicarle un margen a la imagen a su alrededor*/
 }
-#container {
-	margin-top: 50px;
-	margin-left: 25%;
-	width: 50%; /* Ancho del contenedor */
+#container { /*Contenedor principal donde funcionan las pestañas*/
+	margin-top: 20px; /*Distancia entre el objeto y el header*/
+	margin-left: 30%; /*Distancia entre el contenedor y el margen derecho*/
+	width: 40%; /* Ancho del contenedor */
 }
-#container input {
-	height: 35px;
-	visibility: hidden;
+#container input { 
+	height: 35px; /*Tamaño del contenedor de pestañas*/
+	visibility: hidden; /*Visibilidad de los radiobuttons para hacer funcionales las pestañas*/
 }
-#container label {
+label {
 	background: #A9F5F2; /* Fondo de las pestañas */
 	color: black; /* Color del texto de las pestañas */
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	cursor: pointer;
-	display: block;
-	float: left;
+	border-top-left-radius: 15px; /*Curvatura de las pestañas*/
+	border-top-right-radius: 15px;/*Curvatura de las pestañas*/
+	cursor: pointer; /*Puntero de selección de cada pestaña*/
+	display: block; /*Forma en la que se muestra la pestaña*/
+	float: left; /*Ubicación flotante de las etiquetas dentro del contenedor de etiquetas*/
 	font-size: 16px; /* Tamaño del texto de las pestañas */
-	height: 35px;
+	height: 35px; /*Tamaño de cada pestaña*/
 	line-height: 40px;
 	margin-right: 5px;
 	padding: 2px 14px;
@@ -45,7 +71,7 @@ h1 {
  	color: #444; /* Color de las pestañas al presionar */
  	position: relative;
 }
-#content {
+#content { /*Contenedor de contenido*/
  	background: #f1f1f1; /* Fondo del contenido */
  	border-bottom-left-radius: 15px;
  	border-bottom-right-radius: 15px;
@@ -58,12 +84,63 @@ h1 {
  	opacity: 0;
  	margin: 15px;
  	margin-left: 20px;
- 	position: absolute;
+ 	position: absolute; /**/
+}
+label.etiqueta{ /*Para poder usar otras etiquetas sin que se le apliquen las condiciones de label en las propiedades mencionadas arriba*/
+	background: transparent;
+	color: black; 
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	cursor: auto;
+	display: inline;
+	float: none;
+	font-size: 12px; /* Tamaño del texto de las pestañas */
+	height: 0px;
+	line-height: 0px;
+	margin-right: 0px;
+	padding: 0px 0px;
+	text-align: center;
+}
+#container input.datos{ /*Para hacer visibles solo los inputs de datos dentro del contenedor*/
+	visibility: visible;
+	height: auto;
+}
+#container input:hover + label.etiqueta { /* Para que las etiquetas mantengan el mismo estilo y no se apliquen los cambios mencionados arriba*/
+ 	background: transparent; 
+ 	color: black; 
+}
+#container input:checked + label.etiqueta { /* Para que las etiquetas mantengan el mismo estilo y no se apliquen los cambios mencionados arriba*/
+ 	background: transparent; 
+ 	color: black; 
+ 	position: relative;
 }
 
 #container input#tab-1:checked ~ #content #content-1,
 #container input#tab-2:checked ~ #content #content-2,
 #container input#tab-3:checked ~ #content #content-3,
-#container input#tab-4:checked ~ #content #content-4 {
+#container input#tab-4:checked ~ #content #content-4 { /* Para relacionar el contener de las etiquetas con el contenido, nótese que cada tab-"x" se relaciona con cada "content-"x"*/
 	opacity: 1;
+}
+/* Otras opciones*/
+#username
+{
+	margin-left: 32px;
+}
+#career
+{
+	margin-left: 60px;
+}
+#english
+{
+	margin-left: 21px;
+	width: 165px;
+}
+#skills
+{
+	margin-left: 2px;
+	width: 165px;
+}
+input.datos:focus { /* Resaltar los cuadros de texto donde se esta escribiendo*/
+  border: 1px solid black;
+  background: white;
 }
