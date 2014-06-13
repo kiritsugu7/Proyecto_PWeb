@@ -2,14 +2,17 @@ body { background-color: white; }
 h1 { font-size:40px; font-family:verdana; color:black }
 h2 { font-size: 27px; font-family: "verdana"; color: black }
 p { font-size:15px; font-family:verdana; color:black }
-div.container {
+div.main_content {
 	border-radius: 20px;
 	width: 300px;
 	border: 2px solid yellow;
 	margin: 0 auto; 
 	margin-top: 100px;
 	margin-bottom: 50px;
-	padding: 10px;
+	padding-bottom:25px;
+	padding-left: 15px;
+	padding-top: 25px;
+	padding-right:5px;
 }
 #userrole{
 	margin-left: 2px;
@@ -25,4 +28,13 @@ div.container {
 }
 #save{
 	margin-left:10%;
+	font-size: 12px;
+}
+#forgotpass{
+	font-size: 12px;
+	margin-left: 129px;
+}
+#newaccount{
+	font-size: 12px;
+	margin-left: 40px;
 }

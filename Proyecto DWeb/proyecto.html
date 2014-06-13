@@ -1,33 +1,32 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE html>
 <head>
 <title>Universidad T&eacute;cnica Nacional</title>
+<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="estiloproyecto.css" media="screen" />
 </head>
  
 <body>
-	<div class="container">
-        <div class="main_content">
-            <div align="right"><img src="UTN logo.jpg"></div>
-            <form action="salvar.php" method="get" name="form_1">
-            	<label for="userrole">Tipo de usuario</label>
-                <select id="userrole" name="userrole" >
-                    <option selected="true" value="_"></option>
-                    <option value="dircarrera">Director de carrera</option>
-                    <option value="student">Estudiante</option>
-                </select>
-                <br>
-                <label for="username">Identificaci&oacute;n</label>
-                <input type="text" maxlength="10" id="username" name="username"></input>
-                <br>
-                <label for="password">Contrase&ntilde;a</label>
-                <input type="password" maxlength="10" id="password" name="password"></input>
-                <br>
-                <br>
-                <input type="submit" value="Entrar" id="save"></input>
-                <input type="submit" value="Olvid&oacute; su ID o contrase&ntilde;a?"></input>
-            </form>
-        </div>
+    <div class="main_content">
+        <div> <img src="UTN%20logo.jpg" alt="Logo U"></div>
+        <form action="salvar.php" method="get" name="form_1">
+            <label for="userrole">Tipo de usuario</label>
+            <select id="userrole" name="userrole" >
+                <option value="student">Estudiante</option>
+                <option value="dircarrera">Director de carrera</option>
+            </select>
+            <br>
+            <label for="username">Identificaci&oacute;n</label>
+            <input type="text" maxlength="10" id="username" name="username"/>
+            <br>
+            <label for="password">Contrase&ntilde;a</label>
+            <input type="password" maxlength="10" id="password" name="password"/>
+            <br>
+            <br>
+            <input type="submit" value="Entrar" id="save"/>
+            <a id="newaccount" href="" target="_blank">Crear una cuenta</a>
+            <br>
+            <a id="forgotpass" href="" target="_blank">Olvid&oacute; su ID o contrase&ntilde;a?</a>
+        </form>
     </div>
 </body>
 </html>

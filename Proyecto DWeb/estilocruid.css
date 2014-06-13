@@ -1,0 +1,69 @@
+body { background-color: white; }
+* {
+	font-family: Arial;
+	padding: 0px;
+	margin: 0px;
+}
+h1 {
+	margin-left: 6% ;
+	text-align: left;
+	font-size:15px;
+}
+#image{
+	margin: 5px;
+}
+#container {
+	margin-top: 50px;
+	margin-left: 25%;
+	width: 50%; /* Ancho del contenedor */
+}
+#container input {
+	height: 35px;
+	visibility: hidden;
+}
+#container label {
+	background: #A9F5F2; /* Fondo de las pestañas */
+	color: black; /* Color del texto de las pestañas */
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 16px; /* Tamaño del texto de las pestañas */
+	height: 35px;
+	line-height: 40px;
+	margin-right: 5px;
+	padding: 2px 14px;
+	text-align: center;
+}
+#container input:hover + label {
+ 	background: #D8D8D8; /* Fondo de las pestañas al pasar el cursor por encima */
+ 	color: #666; /* Color del texto de las pestañas al pasar el cursor por encima */
+}
+#container input:checked + label {
+ 	background: #E0F8F1; /* Fondo de las pestañas al presionar */
+ 	color: #444; /* Color de las pestañas al presionar */
+ 	position: relative;
+}
+#content {
+ 	background: #f1f1f1; /* Fondo del contenido */
+ 	border-bottom-left-radius: 15px;
+ 	border-bottom-right-radius: 15px;
+ 	border-top-right-radius: 15px; 
+ 	min-height: 350px; /* Alto del contenido */
+ 	position: relative;
+ 	width: 100%;
+}
+#content div {
+ 	opacity: 0;
+ 	margin: 15px;
+ 	margin-left: 20px;
+ 	position: absolute;
+}
+
+#container input#tab-1:checked ~ #content #content-1,
+#container input#tab-2:checked ~ #content #content-2,
+#container input#tab-3:checked ~ #content #content-3,
+#container input#tab-4:checked ~ #content #content-4 {
+	opacity: 1;
+}
