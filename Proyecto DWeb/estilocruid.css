@@ -70,6 +70,7 @@ label {
  	background: #E0F8F1; /* Fondo de las pestañas al presionar */
  	color: #444; /* Color de las pestañas al presionar */
  	position: relative;
+ 	z-index: 6; /*explicado más abajo :D*/
 }
 #content { /*Contenedor de contenido*/
  	background: #f1f1f1; /* Fondo del contenido */
@@ -79,12 +80,14 @@ label {
  	min-height: 350px; /* Alto del contenido */
  	position: relative;
  	width: 100%;
-}
+ 	z-index: 5;/*explicado más abajo :D*/ 
+ }
 #content div {
  	opacity: 0;
  	margin: 15px;
  	margin-left: 20px;
- 	position: absolute; /**/
+ 	position: absolute;
+ 	z-index: -100; /*explicado más abajo :D*/
 }
 label.etiqueta{ /*Para poder usar otras etiquetas sin que se le apliquen las condiciones de label en las propiedades mencionadas arriba*/
 	background: transparent;
@@ -120,15 +123,36 @@ label.etiqueta{ /*Para poder usar otras etiquetas sin que se le apliquen las con
 #container input#tab-3:checked ~ #content #content-3,
 #container input#tab-4:checked ~ #content #content-4 { /* Para relacionar el contener de las etiquetas con el contenido, nótese que cada tab-"x" se relaciona con cada "content-"x"*/
 	opacity: 1;
+	z-index: 100; /*Los Z-index en general, sirven para que el contenido no se pueda seleccionar, ver o modificar a través de otra pestaña, todos los 
+	divs de las 4 pestañas estan en un mismo lugar, sin el z-index yo podría modificar datos en la pestaña 4 desde la pestaña 1, seleccionar por ejemplo el rol
+	desde la pestaña 3 aunque no vea si lo estoy haciendo o no, en teoría, hace que los formularios al pasar de pestaña, se vuelvan inactivos e ineditables*/
 }
 /* Otras opciones*/
-#username
+#codigo
 {
-	margin-left: 32px;
+	margin-left: 78px;
+}
+#career1
+{
+	margin-left: 73px;
+	width:165px;
+}
+#ident
+{
+	margin-left: 90px;
+}
+#fname
+{
+	margin-left: 57px;
+}
+#lname
+{
+	margin-left: 58px;
 }
 #career
 {
 	margin-left: 60px;
+	width:165px;
 }
 #english
 {
@@ -140,7 +164,41 @@ label.etiqueta{ /*Para poder usar otras etiquetas sin que se le apliquen las con
 	margin-left: 2px;
 	width: 165px;
 }
-input.datos:focus { /* Resaltar los cuadros de texto donde se esta escribiendo*/
-  border: 1px solid black;
-  background: white;
+#buscar
+{
+	margin-left: 430px;
+	margin-top: -50px;
+	position: absolute;
 }
+#buscar-2
+{
+	margin-left: 430px;
+	margin-top: -50px;
+	position: absolute; /*Para colocarlo en la posición que yo deseo y no en una posición de ordenamiento predeterminada por el div*/
+}
+#admuser
+{
+	margin-left: 106px;
+}
+#usernick
+{
+	margin-left: 62px;
+}
+#nameuser
+{
+	margin-left: 73px;
+}
+#roleuser
+{
+	margin-left: 100px;
+	width: 165px;
+}
+input.datos:focus { /* Resaltar los cuadros de texto donde se esta escribiendo*/
+  border: 0.5px solid red;
+  background: white;
+  border-radius: 2px;
+}
+
+
+
+
