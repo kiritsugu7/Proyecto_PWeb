@@ -16,7 +16,7 @@
     <div id="fotoperfil">
       <img src="lol.jpg" alt="perfilpic">
     </div>
-    <form action="principal.html" method="get" name="form_1">
+    <form action="editedcontent.html" method="get" name="form_1">
       <div id="personalinfo">
         <p>Datos personales</p>
         <label for="name" class="label">-Nombre</label>
@@ -29,9 +29,24 @@
         <input type="text" maxlength="10" id="id" name="id" value="2-222-222"/>
         <br>
         <label for="career" class="label">-Carrera</label>
-        <input type="text" maxlength="10" id="career" name="career" value="Ingeniería Software"/>
+        <select id="career" name="career" >
+          <option value="_"></option>
+          <option value="so">Salud Ocupacional</option>
+          <option value="is" selected>Ingenieria Software</option>
+          <option value="il">Ingles como lengua extrangera</option>
+          <option value="cn">Contabilidad y finanzas</option>
+          <option value="rh">Recursos Humanos</option>
+          <option value="ga">Gestion Ambiental</option>
+          <option value="aa">Administracion Aduanera</option>
+        </select><br>
         <label for="english" class="label">-Nivel de ingl&eacute;s</label>
-        <input type="text" maxlength="10" id="english" name="english" value="Alto"/>
+        <select id="english" name="english" >
+          <option value="d"></option>
+          <option value="c">Bajo</option>
+          <option value="b">Medio</option>
+          <option value="a" selected>Alto</option>
+          <option value="s">Muy Alto</option>
+        </select>
       </div>
       <div id="skills">
         <label for="skillbox">Skills</label><br>

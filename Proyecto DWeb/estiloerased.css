@@ -1,0 +1,17 @@
+a {text-decoration: none; }
+a:link {text-decoration:none; color: blue; } /*Darle color al enlace*/
+a:visited {text-decoration:none; color: purple; } /*Darle color al enlace visitado*/
+a:active {text-decoration:none; color: green; } /*Darle color y decoración al enlace activo*/
+a:hover {text-decoration:none; color: green; } /*Darle color al enlace por el cual está pasando el puntero*/
+body{
+	background-color: white;
+}
+h1 { font-size:20px; 
+	font-family:verdana; 
+	color:#0B2161;
+	margin-left: 33%;
+	margin-top: 20%;  
+}
+a{
+	margin-left: 42%;
+}
