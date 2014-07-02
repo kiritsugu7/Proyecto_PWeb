@@ -43,10 +43,11 @@ h1 {
 	text-align: center;
 }
 
-#enlace
+.enlace
 {
 	font-size: 20px;
 	font-style: inherit;
+	margin-right:53px;
 }
 
 #carreras{
@@ -69,6 +70,7 @@ h1 {
 	border: 1px solid black;
 	border-collapse: collapse;
 	margin-left: 10px;
+	position: absolute;
 }
 .tabla th, .tabla td {
   border: 1px solid #000;

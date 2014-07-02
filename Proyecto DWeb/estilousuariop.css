@@ -38,12 +38,11 @@ h1 {
 }
 #personalinfo
 {
-	border: 1px solid black;
 	width: 350px;
 	height: 115px;
-	margin-top: 20px;
+	margin-top: 10%;
+	margin-left: 25%;
 	float: left;
-	margin-left: 33%;
 }
 #name{
 	margin-left:49px;
@@ -53,49 +52,47 @@ h1 {
 	margin-left:49px;
 }
 #id{
-	margin-left:55px;
+	margin-left:56px;
 }
 #career
 {
 	margin-left:51px;
 	width: 163px;
 }
-#english
-{
-	margin-left: 1px;
-	width: 163px;
-}
-#skills
-{
-	border: 1px solid black;
-	width: 350px;
-	height: 130px;
-	margin-top: 20px;
-	float: left;
-	margin-left: -1px;
-	
-}
-#projects
-{
-	border: 1px solid black;
-	width: 701px;
-	height: 200px;
-	margin-left: 364px;
-	clear:both;
-	text-align: center;
-}
-
 #pw{
 	width: 163px;
 	margin-left: 23px;
 }
 
-#enviar
+.enviar
 {
-	margin-top: 12%;
-	width: 70px;
-	clear: both;
+	margin-top: 30%;
+	float:right;
+	margin-right: 20px;
 }
 .label{
-	margin-left: 25px;
+	margin-left: 15px;
+}
+.enlace
+{
+	font-size: 20px;
+	font-style: inherit;
+	margin-right:53px;
+}
+#container
+{
+	margin-top: -20px; /*Distancia entre el objeto y el header*/
+	margin-left: 20%; /*Distancia entre el contenedor y el margen derecho*/
+	width: 60%; /* Ancho del contenedor */
+	text-align: center;
+}
+.enviar2
+{
+	visibility: hidden;
+}
+#role
+{
+	margin-left: 73px;
+	width: 167px;
+	margin-bottom: 7px;
 }

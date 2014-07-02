@@ -42,11 +42,11 @@ h1 {
 	width: 60%; /* Ancho del contenedor */
 	text-align: center;
 }
-
-#enlace
+.enlace
 {
 	font-size: 20px;
 	font-style: inherit;
+	margin-right:53px;
 }
 
 #students{

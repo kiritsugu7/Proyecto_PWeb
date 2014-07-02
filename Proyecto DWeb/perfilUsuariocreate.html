@@ -2,7 +2,7 @@
 <head>
 <title>Universidad T&eacute;cnica Nacional</title>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="estilousuarioc.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="estilousuariop.css" media="screen" />
 </head>
  
 <body>
@@ -13,28 +13,43 @@
 </div>
   <div id="image"><img src="UTN%20logo2.jpg" alt="Logo U"></div>
   <h1><a href="estudiantes.html">Inicio&nbsp;</a>&#62;&nbsp;Usuario</h1>
-    <form action="addedcontent.html" method="get" name="form_1">
-      <div id="personalinfo">
-        <p>Datos personales</p>
-        <label for="name" class="label">-Nombre</label>
-        <input type="text" maxlength="10" id="name" name="name"/>
-        <br>
-        <label for="lastname" class="label">-Apellido</label>
-        <input type="text" maxlength="10" id="lastname" name="lastname"/>
-        <br>
-        <label for="id" class="label">-C&eacute;dula</label>
-        <input type="text" maxlength="10" id="id" name="id"/>
-        <br>
-        <label for="pw" class="label">-Contrase&ntilde;a</label>
-        <input type="password" maxlength="10" id="pw" name="pw"/>
-        <label for="role" class="label">-Role</label>
-        <select id="role" name="role" >
-          <option value="_" selected></option>
-          <option value="Adm">Director de Carrera</option>
-          <option value="Dir">Administrador</option>
-        </select><br>
-      </div>
-      <input type="submit" value="Guardar" id="enviar"/>
-    </form>
+    <div id="container">
+    <a href="principal.html" target:"_blank" class="enlace">P&aacute;gina principal</a> 
+    <a href="carreras.html" target:"_blank" class="enlace">Carreras</a>
+    <a href="estudiantes.html" target:"_blank" class="enlace">Estudiantes</a>
+    <a href="usuarios.html" target:"_blank" class="enlace">Usuarios</a>
+    <div id="students">
+    <br>
+      <form action="editedcontent.html" method="get" name="form_1">
+        <div id="personalinfo">
+          <fieldset>
+          <legend>Datos personales</legend> 
+            <label for="name" class="label">-Nombre</label>
+            <input type="text" maxlength="10" id="name" name="name" required/>
+            <br>
+            <label for="lastname" class="label">-Apellido</label>
+            <input type="text" maxlength="10" id="lastname" name="lastname" required/>
+            <br>
+            <label for="id" class="label">-C&eacute;dula</label>
+            <input type="text" maxlength="10" id="id" name="id" required/>
+            <br>
+            <label for="pw" class="label">-Contrase&ntilde;a</label>
+            <input type="password" maxlength="10" id="pw" name="pw" required/>
+            <br>
+            <label for="role" class="label">-Role</label>
+            <select id="role" name="role">
+              <option value="_" selected></option>
+              <option value="Adm">Director de Carrera</option>
+              <option value="Dir">Administrador</option>
+            </select>
+          </fieldset>
+        </div>
+        <input type="submit" value="Guardar" class="enviar"/>
+      </form>
+      <form action="usuarios.html" method="get">
+        <input type="submit" value="Cancelar" class="enviar"/>
+      </form>
+  </div>
+</div>
 </body>
 </html>

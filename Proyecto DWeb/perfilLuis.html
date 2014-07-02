@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+<title>Universidad T&eacute;cnica Nacional</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="estilocrearest.css" media="screen" />
+</head>
+ 
+<body>
+ <!--Título, para espaciar &nbsp;-->
+ <div id="opciones">
+  <label class="etiqueta" id="holaadmin">Hola Admin</label>
+  <a href="login.html" target:"_blank" id="salir">Salir</a>
+</div>
+  <div id="image"><img src="UTN%20logo2.jpg" alt="Logo U"></div>
+  <h1>Estudiantes</h1>
+  <div id="fotoperfil">
+    <img src="lol.jpg" alt="perfilpic">
+    </div>
+  <div id="container">
+    <a href="principal.html" target:"_blank" class="enlace">P&aacute;gina principal</a> 
+    <a href="carreras.html" target:"_blank" class="enlace">Carreras</a>
+    <a href="estudiantes.html" target:"_blank" class="enlace">Estudiantes</a>
+    <a href="usuarios.html" target:"_blank" class="enlace">Usuarios</a>
+    <div id="students">
+    <br>
+    <form action="addedcontent2.html" method="get" name="form_1">
+      <div id="personalinfo">
+        <fieldset>
+        <legend>Datos personales</legend>
+        <label for="name" class="label">-Nombre</label>
+        <input type="text" maxlength="10" id="name" name="name" value="Luis" disabled readonly/>
+        <br>
+        <label for="lastname" class="label">-Apellido</label>
+        <input type="text" maxlength="10" id="lastname" name="lastname" value="Saborio" disabled readonly/>
+        <br>
+        <label for="id" class="label">-C&eacute;dula</label>
+        <input type="text" maxlength="10" id="id" name="id" value="2-222-222" disabled readonly/>
+        <br>
+        <label for="career" class="label">-Carrera</label>
+        <select id="career" name="career" readonly disabled>
+          <option value="_"></option>
+          <option value="so">Salud Ocupacional</option>
+          <option value="is" selected>Ingenieria Software</option>
+          <option value="il">Ingles como lengua extrangera</option>
+          <option value="cn">Contabilidad y finanzas</option>
+          <option value="rh">Recursos Humanos</option>
+          <option value="ga">Gestion Ambiental</option>
+          <option value="aa">Administracion Aduanera</option>
+        </select><br>
+        <label for="english" class="label">-Nivel de ingl&eacute;s</label>
+        <select id="english" name="english" readonly disabled>
+          <option value="d"></option>
+          <option value="c">Bajo</option>
+          <option value="b">Medio</option>
+          <option value="a" selected>Alto</option>
+          <option value="s">Muy Alto</option>
+        </select>
+      </fieldset>
+      </div>
+      <div id="skills">
+        <fieldset>
+          <legend>Skills</legend>
+          <input type="checkbox" name="puntual" value="1" checked disabled readonly/>
+          <label for="skills">Puntual</label>
+          <input type="checkbox" name="program" value="2" checked disabled readonly/>
+          <label for="skills">Maneja lenguajes de programación</label><br>
+          <input type="checkbox" name="teamw" value="3" disabled readonly/>
+          <label for="skills">Trabajo en equipo</label>
+          <input type="checkbox" name="inves" value="4" checked disabled readonly/>
+          <label for="skills">Investigador</label>
+          <input type="checkbox" name="office" value="5" checked disabled readonly/>
+          <label for="skills">Maneja Office</label><br>
+          <input type="checkbox" name="sql" value="6" checked disabled readonly/>
+          <label for="skills">Maneja SQL</label>
+          <input type="checkbox" name="leader" value="7" disabled readonly/>
+          <label for="skills">Liderazgo</label>
+          <input type="checkbox" name="idiomas" value="8" disabled readonly/>
+          <label for="skills">Maneja varios idiomas</label><br>
+          <input type="checkbox" name="social" value="9" disabled readonly/>
+          <label for="skills">Relaciones interpersonales</label>
+          <input type="checkbox" name="redes" value="10" checked disabled readonly/>
+          <label for="skills" >Conocimiento redes</label><br>
+          <input type="checkbox" name="flex" value="11" disabled readonly/>
+          <label for="skills">Flexibilidad</label>
+          <input type="checkbox" name="creat" value="12" disabled readonly/>
+          <label for="skills" >Creatividad</label>
+          <input type="checkbox" name="emprend" value="13" disabled readonly/>
+          <label for="skills">Emprendedurismo</label>
+        </fieldset>
+      </div>
+      <div id="projects">
+        <fieldset>
+        <legend>Proyectos realizados</legend>
+        <textarea name="projectbox" id="projectbox" readonly disabled>-Diseño de la página de perfiles de la Universidad
+-Creación de una aplicación de escritorio basado en un CRUID de camiones, clientes y alquiler por cantidad viajada o trayecto
+-Proyecto de contabilidad de la empresa Patito
+-Diseño teórico de la red de la nueva sede de la Universidad </textarea>
+      </fieldset>
+      </div>
+      <input type="submit" value="Guardar" class="enviar">
+    </form>
+    <form action="estudiantes.html" method="get">
+      <input type="submit" value="Cancelar" class="enviar">
+    </form>
+    <br>
+  </div>
+  </div>
+</body>
+</html>
