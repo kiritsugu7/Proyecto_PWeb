@@ -1,8 +1,8 @@
 a {text-decoration: none; }
-a:link {text-decoration:underline; color: blue; } /*Darle color al enlace*/
+a:link {text-decoration:none; color: blue; } /*Darle color al enlace*/
 a:visited {text-decoration:none; color: purple; } /*Darle color al enlace visitado*/
 a:active {text-decoration:none; color: green; } /*Darle color y decoración al enlace activo*/
-a:hover {text-decoration:underline;color: green; } /*Darle color al enlace por el cual está pasando el puntero*/
+a:hover {text-decoration:none; color: green; } /*Darle color al enlace por el cual está pasando el puntero*/
 
 body { background-color: white; } /*Color de fondo de la página*/
 * {
@@ -36,35 +36,50 @@ h1 {
 	margin: 5px; /*Aplicarle un margen a la imagen a su alrededor*/
 	float:left;
 }
-#container { /*Contenedor principal donde funcionan las pestañas*/
-	margin-top: -20px; /*Distancia entre el objeto y el header*/
-	margin-left: 20%; /*Distancia entre el contenedor y el margen derecho*/
-	width: 60%; /* Ancho del contenedor */
-	text-align: center;
+#personalinfo
+{
+	width: 350px;
+	height: 115px;
+	margin-top: 10%;
+	margin-left: 25%;
+	float: left;
+}
+#codigo{
+	margin-left:49px;
+
+}
+#nombre{
+	margin-left:42px;
+	margin-bottom: 7px;
 }
 
+#enviar
+{
+	margin-top: 165px;
+	margin-left: -188px;
+	position:absolute;
+}
+
+.label{
+	margin-left: 15px;
+}
 .enlace
 {
 	font-size: 20px;
 	font-style: inherit;
 	margin-right:53px;
 }
-
-#dashboard{
-	width: 400px;
-	margin-left: 110px;
-	text-align: left;
-	margin-top: 20px;
+#container
+{
+	margin-top: -20px; /*Distancia entre el objeto y el header*/
+	margin-left: 20%; /*Distancia entre el contenedor y el margen derecho*/
+	width: 60%; /* Ancho del contenedor */
+	text-align: center;
 }
-#lasts{
-	border-bottom: 1px solid black;
-	border-bottom-right-radius: 25px;
-	color: black;
-	font-weight: bold;
+#enviar2
+{
+	margin-top: 165px;
+	margin-left:-260px;
+	position:absolute;
+	visibility:hidden;
 }
-.notice{
-	color: black;
-	font-size: 12px;
-}
-
-

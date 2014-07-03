@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<title>Universidad T&eacute;cnica Nacional</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="ccarrera.css" media="screen" />
+</head>
+ 
+<body>
+ <!--Título-->
+ <div id="opciones">
+  <label class="etiqueta" id="holaadmin">Hola Admin</label>
+  <a href="login.html" id="salir">Salir</a>
+</div>
+  <div id="image"><img src="UTN%20logo2.jpg" alt="Logo U"></div>
+  <h1>Carrera</h1>
+    <div id="container">
+    <a href="principal.html" class="enlace">P&aacute;gina principal</a> 
+    <a href="carreras.html" class="enlace">Carreras</a>
+    <a href="estudiantes.html" class="enlace">Estudiantes</a>
+    <a href="usuarios.html" class="enlace">Usuarios</a>
+    <div id="students">
+    <br>
+      <form action="addedcontent4.html" method="get" name="form_1">
+        <div id="personalinfo">
+          <fieldset>
+          <legend>Datos de la carrera a agregar</legend> 
+            <label for="codigo" class="label" autofocus>-C&oacute;digo</label>
+            <input type="text" id="codigo" name="codigo" value="IL"/>
+            <br>
+            <label for="nombre" class="label">-Nombre</label>
+            <input type="text" id="nombre" name="nombre" value="Ingl&eacute;s como lengua extranjera"/>
+            <br>
+          </fieldset>
+        </div>
+        <input type="submit" value="Guardar" id="enviar"/>
+      </form>
+      <form action="carreras.html" method="get">
+        <input type="submit" value="Cancelar" id="enviar2"/>
+      </form>
+  </div>
+</div>
+</body>
+</html>
