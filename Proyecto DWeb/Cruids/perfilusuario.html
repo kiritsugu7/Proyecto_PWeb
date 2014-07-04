@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+<title>Universidad T&eacute;cnica Nacional</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="Estilos/estilousuariop.css" media="screen" />
+</head>
+ 
+<body>
+ <!--Título-->
+ <div id="opciones">
+  <label class="etiqueta" id="holaadmin">Hola Admin</label>
+  <a href="login.html"  id="salir">Salir</a>
+</div>
+  <div id="image"><img src="UTN%20logo2.jpg" alt="Logo U"></div>
+  <h1>Usuarios</h1>
+  <div id="container">
+    <a href="principal.html"  class="enlace">P&aacute;gina principal</a> 
+    <a href="carreras.html"  class="enlace">Carreras</a>
+    <a href="estudiantes.html"  class="enlace">Estudiantes</a>
+    <a href="usuarios.html"  class="enlace">Usuarios</a>
+    <div id="students">
+    <br>
+      <form action="editedcontent.html" method="get" name="form_1">
+        <div id="personalinfo">
+          <fieldset>
+          <legend>Datos personales</legend> 
+            <label for="name" class="label">-Nombre</label>
+            <input type="text" id="name" name="name" value="Bladimir" readonly disabled/>
+            <br>
+            <label for="lastname" class="label">-Apellido</label>
+            <input type="text" id="lastname" name="lastname" value="Arroyo" readonly disabled/>
+            <br>
+            <label for="id" class="label">-C&eacute;dula</label>
+            <input type="text" id="id" name="id" value="1-234-567" readonly disabled/>
+            <br>
+            <label for="pw" class="label">-Contrase&ntilde;a</label>
+            <input type="password" id="pw" name="pw" value="abcdefghij" readonly disabled/>
+            <br>
+            <label for="role" class="label">-Role</label>
+            <select id="role" name="role" disabled>
+              <option value="_" >_</option>
+              <option value="Adm">Director de Carrera</option>
+              <option value="Dir" selected>Administrador</option>
+            </select>
+          </fieldset>
+        </div>
+        <input type="submit" value="Guardar" class="enviar2" disabled/>
+      </form>
+      <form action="usuarios.html" method="get">
+        <input type="submit" value="Volver atrás" class="enviar"/>
+      </form>
+  </div>
+</div>
+</body>
+</html>

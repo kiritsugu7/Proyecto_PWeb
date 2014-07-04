@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+<title>Universidad T&eacute;cnica Nacional</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="Estilos/estilousuariop.css" media="screen" />
+</head>
+ 
+<body>
+ <!--Título-->
+ <div id="opciones">
+  <label class="etiqueta" id="holaadmin">Hola Admin</label>
+  <a href="login.html" id="salir">Salir</a>
+</div>
+  <div id="image"><img src="UTN%20logo2.jpg" alt="Logo U"></div>
+  <h1><a href="estudiantes.html">Inicio&nbsp;</a>&#62;&nbsp;Usuario</h1>
+    <div id="container">
+    <a href="principal.html" class="enlace">P&aacute;gina principal</a> 
+    <a href="carreras.html" class="enlace">Carreras</a>
+    <a href="estudiantes.html" class="enlace">Estudiantes</a>
+    <a href="usuarios.html" class="enlace">Usuarios</a>
+    <div id="students">
+    <br>
+      <form action="addedcontent3.html" method="get" name="form_1">
+        <div id="personalinfo">
+          <fieldset>
+          <legend>Datos personales</legend> 
+            <label for="name" class="label">-Nombre</label>
+            <input type="text" maxlength="10" id="name" name="name" required/>
+            <br>
+            <label for="lastname" class="label">-Apellido</label>
+            <input type="text" maxlength="10" id="lastname" name="lastname" required/>
+            <br>
+            <label for="id" class="label">-C&eacute;dula</label>
+            <input type="text" maxlength="10" id="id" name="id" required/>
+            <br>
+            <label for="pw" class="label">-Contrase&ntilde;a</label>
+            <input type="password" maxlength="10" id="pw" name="pw" required/>
+            <br>
+            <label for="role" class="label">-Role</label>
+            <select id="role" name="role">
+              <option value="_" selected>_</option>
+              <option value="Adm">Director de Carrera</option>
+              <option value="Dir">Administrador</option>
+            </select>
+          </fieldset>
+        </div>
+        <input type="submit" value="Guardar" class="enviar"/>
+      </form>
+      <form action="usuarios.html" method="get">
+        <input type="submit" value="Cancelar" class="enviar"/>
+      </form>
+  </div>
+</div>
+</body>
+</html>
